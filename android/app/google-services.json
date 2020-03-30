@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "982607108760",
+    "firebase_url": "https://levels-bdde2.firebaseio.com",
+    "project_id": "levels-bdde2",
+    "storage_bucket": "levels-bdde2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982607108760:android:1b1bff9131a22e5a32ceed",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982607108760-kp9joma1dkfkcf7uvfih0bq4jeptnt1h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login",
+            "certificate_hash": "77849a6e49d34f752b04b0a59967db263adc7b36"
+          }
+        },
+        {
+          "client_id": "982607108760-4ch4kb0thh3lot68km0bd56a2925s3cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUPkKPcZ8K4FPZ5pYOitHc3rCCO_Ub6fU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982607108760-4ch4kb0thh3lot68km0bd56a2925s3cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
