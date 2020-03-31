@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodeRehan</string>
+
+    <string name="facebook_app_id">264051314597550</string>
+    <string name="fb_login_protocol_scheme">fb264051314597550</string>
+
+</resources>

@@ -95,9 +95,10 @@ class _WelcomePageState extends State<SignIn> {
   ////////////Sign in with facebook
 
    _signInWithFacebook() async {
-     facebookLogin.loginBehavior = FacebookLoginBehavior.webViewOnly;
+      facebookLogin.loginBehavior = FacebookLoginBehavior.webViewOnly;
      final FacebookLoginResult result =
      await facebookLogin.logIn(['email']);
+     print(result.status);
      if (result.status == FacebookLoginStatus.loggedIn) {
        final AuthCredential credential = FacebookAuthProvider.getCredential(
          accessToken: result.accessToken.token,
