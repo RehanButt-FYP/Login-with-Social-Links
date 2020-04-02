@@ -22,6 +22,7 @@ dependencies:
   flutter_spinkit:
   cupertino_icons: ^0.1.2
   firebase_auth:
+  firebase_core: ^0.4.0+9
   modal_progress_hud:
   google_sign_in:
   flutter_signin_button:

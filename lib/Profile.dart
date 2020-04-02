@@ -15,9 +15,6 @@ class _ProfileState extends State<Profile> {
       child: Center(
         child: Text("Login Successfull "),
       ),
-
-
-
     );
   }
 }
