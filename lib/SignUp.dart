@@ -262,21 +262,12 @@ class _WelcomePageState extends State<SignUp > {
                                         .createUserWithEmailAndPassword(email: _email, password: _password)
                                         .then((AuthResult result) {
 
-                                      FirebaseUser user = result.user;
-//
-//                                      DatabaseReference dbref=FirebaseDatabase.instance.reference().child('Broker').child(user.uid);
-//                                      dbref.set({
-//
-//                                        'Name':_name,
-//                                        'Email': user.email,
-//
-//                                      });
 
                                       setState(() {
                                         showProgressSpinner=false;
                                       });
-//                                      Navigator.push(
-//                                          context, MaterialPageRoute(builder: (context) => SignIn()));
+                                      Navigator.push(
+                                          context, MaterialPageRoute(builder: (context) => SignIn()));
 
                                     }).catchError((e) {
                                       setState(() {

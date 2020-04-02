@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-//import 'package:fluttertoast/fluttertoast.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:http/http.dart' as http;
@@ -57,7 +57,7 @@ class _WelcomePageState extends State<SignIn> {
           showProgressSpinner=false;
         });
 
-             // Fluttertoast.showToast(msg: "Sign In fail");
+              Fluttertoast.showToast(msg: "Sign In fail");
               return null;
       }
     else
@@ -68,11 +68,6 @@ class _WelcomePageState extends State<SignIn> {
         String email=userDetail.email;
         String name=userDetail.displayName;
 
-//        DatabaseReference newGoogleUser=FirebaseDatabase.instance.reference().child("Broker").push();
-//        newGoogleUser.set({
-//          'name':name,
-//          'email':email
-//        });
 
         Navigator.push(
             context,
@@ -84,9 +79,6 @@ class _WelcomePageState extends State<SignIn> {
       return authResult.user;
       }
 
-//    FirebaseUser userDetail=authResult.user;
-//
-//    provideDetail prvideInfo= new provideDetail(userDetail.providerId);
   }
   bool _isLoggedIn = false;
   Map userProfile;
@@ -114,7 +106,13 @@ class _WelcomePageState extends State<SignIn> {
        final FirebaseUser currentUser = await _auth.currentUser();
        assert(user.uid == currentUser.uid);
        if (user != null) {
+         Fluttertoast.showToast(msg: " Successfully Sign In With Facebook");
+         Navigator.push(
+             context,
+             MaterialPageRoute(
+                 builder: (context) =>Profile()));
          print('Successfully signed in with Facebook. ' + user.uid);
+
          return true;
        } else {
          print('Failed to sign in with Facebook. ');
@@ -332,10 +330,10 @@ class _WelcomePageState extends State<SignIn> {
                                             showProgressSpinner = false;
                                           });
 
-//                                          Navigator.push(
-//                                              context,
-//                                              MaterialPageRoute(
-//                                                  builder: (context) =>QOLproducts()));
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>Profile()));
 
                                         }
                                         else
